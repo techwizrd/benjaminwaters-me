@@ -1,5 +1,7 @@
+
 body {
   position: relative; /* For scrollyspy */
+  background-color:#8CC152;
   /*font-family: 'Lato', sans-serif !important;*/
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   /*font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; */

@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link href="/static/css/bootflat.css" rel="stylesheet" media="screen">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="icon" href="/static/img/favicon.ico">
+    <meta name="description" content="Ben Waters personal website.">
+    <title> {% block title %} {% endblock %} </title>
+  </head>
+
+  <body>
+    <div id="wrap">
+    {% include 'navbar.html' %}
+    
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    </div>
+    <div id="footer">
+      {% include 'footer.html' %}
+    </div>
+
+    <script src="/static/js/jquery-2.1.0.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
