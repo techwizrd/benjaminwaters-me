@@ -9,6 +9,15 @@ app.wsgi_app = ProxyFix(app.wsgi_app)
 @app.route('/')
 def index():
     return render_template('index.html')
+@app.route('/personal')
+def personal():
+    return render_template('personal.html')
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 @app.errorhandler(404)
 def page_not_found(error):
