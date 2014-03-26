@@ -1,4 +1,6 @@
-#!/falsk/bin/python
+#!/usr/bin/env python
+# encoding: utf-8
+
 from flask import Flask
 from flask import render_template
 from werkzeug.contrib.fixers import ProxyFix
@@ -26,3 +28,6 @@ def page_not_found(error):
 def internal_error(error):
     return render_template('500.html'), 500
 
+
+if __name__ == '__main__':
+    app.run(port=5001, host='0.0.0.0', debug=True)')
