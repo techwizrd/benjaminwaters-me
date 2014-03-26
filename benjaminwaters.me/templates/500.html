@@ -1,1 +1,9 @@
-500
+{% extends 'base_error.html' %}
+{% block content %}
+<div class="row">
+<div class="col-md-4 col-md-offset-5">
+<img src="/static/img/500.png" alt="500 Internal Server Error">
+<p class="lead"> 500 Internal Server Error.<a href="mailto:admin@benjaminwaters.me?Subject=[WARNING]%20500%20Error"> Please Send an Email </a></p>
+</div>
+</div>
+{% endblock %}
