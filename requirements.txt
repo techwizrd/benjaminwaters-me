@@ -13,3 +13,4 @@ itsdangerous==0.23
 piwik==0.5.1
 simplejson==3.3.3
 wsgiref==0.1.2
+Frozen-Flask
